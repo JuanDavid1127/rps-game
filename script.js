@@ -31,12 +31,13 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-    const computerChoice = getComputerChoice();
-    const humanChoice = getHumanChoice();
-    playRound(humanChoice, computerChoice);
+    for(let i = 0; i < 5; i++) {
+        const computerChoice = getComputerChoice();
+        const humanChoice = getHumanChoice();
+        playRound(humanChoice, computerChoice);
+    }
 }
 
-for(let i = 0; i < 5; i++) {
-    playGame();
-}
+playGame();
+
 
